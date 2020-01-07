@@ -1,0 +1,63 @@
+$scissors-gradient: hsl(39, 89%, 49%);
+$paper-gradient: hsl(230, 89%, 62%);
+$rock-gradient: hsl(349, 71%, 52%);
+$background : hsl(237, 49%, 15%);
+$dark-text: hsl(229, 25%, 31%);
+$score-text: hsl(229, 64%, 46%);
+$header-outline: hsl(217, 16%, 45%);
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: $background;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    header {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        margin: 2% 25% auto 25%;
+        border: 5px solid $header-outline;
+        padding: 20px;
+        border-radius: 10px;
+        .score-sec {
+            background-color: #ffffff;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            p {
+                color: $score-text;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            h2 {
+                color: $dark-text;
+                font-size: 8vh;
+            }
+        }
+    }
+    .wrapper {
+        overflow-x: hidden;
+        .game-sec {
+            position: relative;
+            margin-top: 10%;
+            left: 50%;
+            transform: translateX(-10%);
+            .img-sec {
+                position: relative;
+                .icon {
+                    
+                }
+            }
+        }
+
+    }
+}

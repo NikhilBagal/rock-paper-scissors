@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #141539;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2% 25% auto 25%;
+  border: 5px solid #606e85;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+body header .score-sec {
+  background-color: #ffffff;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body header .score-sec p {
+  color: #2a46c0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+body header .score-sec h2 {
+  color: #3b4363;
+  font-size: 8vh;
+}
+
+body .wrapper {
+  overflow-x: hidden;
+}
+
+body .wrapper .game-sec {
+  position: relative;
+  margin-top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+}
+
+body .wrapper .game-sec .img-sec {
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */

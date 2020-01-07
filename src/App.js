@@ -1,6 +1,6 @@
 import React from 'react';
 import Body from './components/body'
-import './App.css';
+import './styles/style.css';
 
 function App() {
   return (
