@@ -68,4 +68,9 @@ body .wrapper .game-sec {
 body .wrapper .game-sec .img-sec {
   position: relative;
 }
+
+body .wrapper .game-sec .img-sec .icon {
+  position: absolute;
+  top: -50%;
+}
 /*# sourceMappingURL=style.css.map */
