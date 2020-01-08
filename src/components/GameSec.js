@@ -5,7 +5,7 @@ function GameSec(){
     return(
         <div className="wrapper">
             <div className="game-sec">
-                <img src={require('../images/bg-triangle.svg')} alt=""/>
+                <img src={require('../images/bg-triangle.svg')} alt="" id="bg-img"/>
                 <div className="img-sec">
                     <div className="paper icon">
                         <img src={require('../images/icon-paper.svg')} alt=""/>

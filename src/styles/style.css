@@ -55,6 +55,7 @@ body header .score-sec h2 {
 
 body .wrapper {
   overflow-x: hidden;
+  height: 100vh;
 }
 
 body .wrapper .game-sec {
@@ -65,12 +66,56 @@ body .wrapper .game-sec {
           transform: translateX(-10%);
 }
 
-body .wrapper .game-sec .img-sec {
-  position: relative;
+body .wrapper .game-sec #bg-img {
+  max-width: 100%;
 }
 
 body .wrapper .game-sec .img-sec .icon {
+  background-color: #ffffff;
+  padding: 30px 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body .wrapper .game-sec .img-sec .icon:hover {
+  opacity: .7;
+}
+
+body .wrapper .game-sec .img-sec .paper {
   position: absolute;
-  top: -50%;
+  top: -25%;
+  left: -5%;
+  border: 20px solid #4865f4;
+}
+
+body .wrapper .game-sec .img-sec .scissors {
+  position: absolute;
+  top: -25%;
+  left: 15%;
+  border: 20px solid #ec9e0e;
+}
+
+body .wrapper .game-sec .img-sec .rock {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  border: 20px solid #dc2e4e;
+}
+
+body .wrapper .rule-sec {
+  position: relative;
+}
+
+body .wrapper .rule-sec .rule-btn {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: absolute;
+  left: 85%;
 }
 /*# sourceMappingURL=style.css.map */
