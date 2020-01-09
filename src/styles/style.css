@@ -118,4 +118,130 @@ body .wrapper .rule-sec .rule-btn {
   position: absolute;
   left: 85%;
 }
+
+.icon {
+  background-color: #ffffff;
+  padding: 30px 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon:hover {
+  opacity: .7;
+}
+
+.icon-paper {
+  border: 20px solid #4865f4;
+}
+
+.icon-scissors {
+  border: 20px solid #ec9e0e;
+}
+
+.icon-rock {
+  border: 20px solid #dc2e4e;
+}
+
+.game-play-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin: 5% 25% auto 25%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.game-play-sec .user-selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-play-sec .user-selected h1 {
+  margin-bottom: 25%;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.game-play-sec .game-play-sec.active {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.game-play-sec .decision-sec {
+  margin-top: 15%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-play-sec .decision-sec h1 {
+  color: #ffffff;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.game-play-sec .decision-sec .play-again-btn {
+  padding: 10px 50px;
+  background-color: #ffffff;
+  color: red;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.game-play-sec .decision-sec .play-again-btn:hover {
+  opacity: .7;
+}
+
+.game-play-sec .decision-sec.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.game-play-sec .system-selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.game-play-sec .system-selected h1 {
+  margin-bottom: 18%;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.game-play-sec .system-selected .bg-circle {
+  padding: 30%;
+  border-radius: 50%;
+  background-color: #606e85;
+  position: absolute;
+  top: 35%;
+  z-index: -1;
+}
 /*# sourceMappingURL=style.css.map */

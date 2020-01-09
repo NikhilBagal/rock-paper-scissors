@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 
 function GameSec(){
     return(
@@ -7,16 +7,22 @@ function GameSec(){
             <div className="game-sec">
                 <img src={require('../images/bg-triangle.svg')} alt="" id="bg-img"/>
                 <div className="img-sec">
-                    <div className="paper icon">
-                        <img src={require('../images/icon-paper.svg')} alt=""/>
-                    </div>
-                    {/* <img src={require('../images/bg-triangle.svg')} alt=""/> */}
-                    <div className="scissors icon">
-                        <img src={require('../images/icon-scissors.svg')} alt=""/>
-                    </div>
-                    <div className="rock icon">
-                        <img src={require('../images/icon-rock.svg') } alt=""/>
-                    </div>
+                    <Link to="/gameplay/icon-paper">
+                        <div className="paper icon">
+                            <img src={require('../images/icon-paper.svg')} alt=""/>
+                        </div>
+                    </Link>
+                    <Link to="/gameplay/icon-scissors">
+                        <div className="scissors icon">                        
+                            <img src={require('../images/icon-scissors.svg')} alt=""/>                                        
+                        </div>
+                    </Link>
+                    <Link to="/gameplay/icon-rock">
+                        <div className="rock icon">
+                            <img src={require('../images/icon-rock.svg') } alt=""/>
+                        </div>
+                    </Link>
+                    
                 </div>
             </div>
             <div className="rule-sec">
