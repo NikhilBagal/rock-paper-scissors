@@ -36,6 +36,11 @@ class Body extends React.Component {
             })
        }*/
     }
+    updateState = () => {
+        this.setState({
+            score: this.state.score + 1
+        })
+    }
     
     render(){
         
@@ -45,7 +50,7 @@ class Body extends React.Component {
                     <ScoreSec Score={this.state.score}/>
                     <Switch>
                         <Route path='/' exact render={(props) => <GameSec {...props} handler={this.handleClick}/>}/>
-                        <Route path="/gameplay/:id"  render={(props) => <GamePlay {...props} />} /> 
+                        <Route path="/gameplay/:id"  render={(props) => <GamePlay {...props} update={this.updateState}/>} /> 
                     </Switch>
                     
                 </div>

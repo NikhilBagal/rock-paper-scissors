@@ -1,11 +1,15 @@
 import React from 'react'
+import GameResult from './GameResult'
 
-function GamePlay(props){
-    const id = props.match.params.id
-    const arr = ['icon-paper','icon-scissors','icon-rock']
-    const filteredArr = arr.filter(item => item !== id)
-    const randomNum = Math.floor(Math.random() * 2)
-    const img = filteredArr[randomNum]
+class GamePlay extends React.Component {
+    constructor(){
+        super()
+        this.state = {
+            
+        }
+        
+    }
+    
     
    /* if(id === 'icon-paper' && img === 'icon-rock'){
         const selector = document.querySelector('.game-play-sec')
@@ -19,25 +23,22 @@ function GamePlay(props){
          })
     }*/
    // console.log(props.systemImg)
+   
+   render(){
+    const id = this.props.match.params.id
+    const arr = ['icon-paper','icon-scissors','icon-rock']
+    const filteredArr = arr.filter(item => item !== id)
+    const randomNum = Math.floor(Math.random() * 2)
+    const img = filteredArr[randomNum]
+    var won = ''
+    if(id === 'icon-paper' && img === 'icon-rock'){
+        won = 'You Won'
+       // this.props.update()
+    }
     return(
-        <div className="game-play-sec ">
-            <div className="user-selected">
-                <h1>You Picked</h1>
-                <img src={require(`../images/${props.match.params.id}.svg`)} alt="" className={`${props.match.params.id} icon`}/>
-            </div>
-            <div className="decision-sec ">
-                <h1>You</h1>
-                <button className="play-again-btn">
-                    Play again
-                </button>
-            </div>
-            <div className="system-selected">
-                <h1>The House Picked</h1>
-    { /* <span className="bg-circle"></span> */}
-              {  <img src={require(`../images/${img}.svg`)} alt="" className={`${img} icon`}/> }
-            </div>
-        </div>
-    )
+       <GameResult userSelected={this.props.match.params.id} imgSrc={img} isWon={won} />
+       )
+   } 
 }
 
 export default GamePlay

@@ -148,8 +148,9 @@ body .wrapper .rule-sec .rule-btn {
   display: flex;
   width: 50%;
   margin: 5% 25% auto 25%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .game-play-sec .user-selected {
@@ -171,7 +172,7 @@ body .wrapper .rule-sec .rule-btn {
   text-transform: uppercase;
 }
 
-.game-play-sec .game-play-sec.active {
+.game-play-sec .game-play-sec {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -210,7 +211,7 @@ body .wrapper .rule-sec .rule-btn {
   opacity: .7;
 }
 
-.game-play-sec .decision-sec.active {
+.game-play-sec .decision-sec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

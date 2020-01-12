@@ -127,7 +127,7 @@ body {
     display: flex;
     width: 50%;
     margin: 5% 25% auto 25%;
-    justify-content: space-around;
+    justify-content: space-between;
     .user-selected {
         display: flex;
         flex-direction: column;
@@ -138,7 +138,7 @@ body {
             text-transform: uppercase;
         }
     }
-    .game-play-sec.active {
+    .game-play-sec {
         justify-content: space-between;
     }
     .decision-sec {
@@ -165,7 +165,7 @@ body {
             opacity: .7;
         }
     }
-    .decision-sec.active {
+    .decision-sec {
         display: flex;
     }
     .system-selected {
