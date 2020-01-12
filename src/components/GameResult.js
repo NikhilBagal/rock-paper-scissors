@@ -1,6 +1,7 @@
 import React from 'react'
 
 function GameResult(props){
+    console.log(props.userSelected,props.imgSrc)
     return(
         <div className="game-play-sec ">
             <div className="user-selected">
