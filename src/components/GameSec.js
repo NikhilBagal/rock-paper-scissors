@@ -9,18 +9,18 @@ function GameSec(props){
                 <img src={require('../images/bg-triangle.svg')} alt="" id="bg-img"/>
                 <div className="img-sec">
                     <Link to="/gameplay/icon-paper">
-                        <div className="paper icon" id="icon-paper" onClick={props.handler}>
-                            <img src={require('../images/icon-paper.svg')} alt="" id="icon-paper" onClick={props.handler}/>
+                        <div className="paper icon" >
+                            <img src={require('../images/icon-paper.svg')} alt="" />
                         </div>
                     </Link>
                     <Link to="/gameplay/icon-scissors" >
-                        <div className="scissors icon" id="icon-scissors" onClick={props.handler}>                        
-                            <img src={require('../images/icon-scissors.svg')} alt="" id="icon-scissors" onClick={props.handler}/>                                        
+                        <div className="scissors icon" >                        
+                            <img src={require('../images/icon-scissors.svg')} alt="" />                                        
                         </div>
                     </Link>
                     <Link to="/gameplay/icon-rock">
-                        <div className="rock icon" id="icon-rock" onClick={props.handler}>
-                            <img src={require('../images/icon-rock.svg') } alt="" id="icon-rock" onClick={props.handler}/>
+                        <div className="rock icon" >
+                            <img src={require('../images/icon-rock.svg') } alt="" />
                         </div>
                     </Link>
                     

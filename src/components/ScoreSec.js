@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { scoreContext } from './ScoreContext'
 
 function ScoreSec(props) {
+    const [state,setState] = useContext(scoreContext)
+    console.log(state)
     return(
         <header>
             <div className="text-sec">
@@ -8,7 +11,7 @@ function ScoreSec(props) {
             </div>
             <div className="score-sec">
                 <p>score</p>
-                <h2>{props.Score}</h2>
+                <h2>{state}</h2>
             </div>
         </header>
     )
