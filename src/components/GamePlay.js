@@ -1,32 +1,38 @@
-import React,{ useContext,useEffect } from 'react'
+import React,{ useContext,useEffect,useRef } from 'react'
 import GameResult from './GameResult'
 import { scoreContext } from './ScoreContext'
 
 const GamePlay = (props) => {
-    console.log(id,img)
-    const [state,setState] = useContext(scoreContext)
+    const [,setState] = useContext(scoreContext)
     var id = props.match.params.id
     var arr = ['icon-paper','icon-scissors','icon-rock']
     var filteredArr = arr.filter(item => item !== id)
-    console.log(filteredArr)
-    
     var randomNum = Math.floor(Math.random() * 2)
-    console.log(filteredArr[randomNum])
-    var img = filteredArr[randomNum]
-    var won = ''
-    console.log(id,img)
-    if(id === 'icon-paper' && img === 'icon-rock'){
-        won = 'You Won';
-        console.log(id,img)
-        console.log(id === 'icon-paper' && img === 'icon-rock')
-       // setState()
-       // setState(state+1)
-       // updateState(1)
-    }else {
-        won = 'You Lose'
-    }
+    const img = useRef(filteredArr[randomNum])
+    var won = useRef()
+    useEffect(() => {
+        if(id === 'icon-paper' && img.current === 'icon-rock'){
+            won.current = 'You Won';
+            setState(1)
+        }else if(id === 'icon-paper' && img.current === 'icon-scissors') {
+            won.current = 'You Lose';
+            setState(0)
+        }else if(id === 'icon-rock' && img.current === 'icon-scissors'){
+            won.current = 'You Won';
+            setState(1)
+        }else if(id === 'icon-rock' && img.current === 'icon-paper'){
+            won.current = 'You Lose';
+            setState(0)
+        }else if(id === 'icon-scissors' && img.current === 'icon-paper'){
+            won.current = 'You Won';
+            setState(1)
+        }else if(id === 'icon-scissors' && img.current === 'icon-rock'){
+            won.current = 'You Lose';
+            setState(0)
+        }
+    },[])
     return(
-        <GameResult userSelected={props.match.params.id} imgSrc={img} isWon={won} />
+        <GameResult userSelected={props.match.params.id} imgSrc={img.current} isWon={won.current} />
     )
 }
 

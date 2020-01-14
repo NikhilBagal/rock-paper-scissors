@@ -47,6 +47,7 @@ body {
     .wrapper {
         overflow-x: hidden;
         height: 100vh;
+        position: relative;
         .game-sec {
             position: relative;
             margin-top: 10%;
@@ -100,7 +101,41 @@ body {
                 cursor: pointer;
                 position: absolute;
                 left: 85%;
+                outline: none;
             }
+        }
+        .rule-img-sec {
+            position: absolute;
+            top:0%;
+            left: 40%;
+            padding: 10px 30px;
+            background-color: #ffffff;
+            border-radius: 10PX;
+            display: none;
+            .rule-head {
+                margin: 10% auto 10% auto;
+                font-size: 30px;
+                font-weight: bolder;
+                text-transform: uppercase;
+                display: flex;
+                width: 80%;
+                justify-content: space-between;
+            }
+            .cancel-btn {
+               background-color: transparent;
+               border: none;
+               color: $header-outline;
+               font-weight: 500;
+               font-size: 30px;
+               cursor: pointer;
+               outline: none;
+            }
+            .cancel-btn::before {
+                content: 'X';
+            }
+        }
+        .rule-img-sec.active {
+            display: block;
         }
     }
 }
@@ -125,31 +160,28 @@ body {
 
 .game-play-sec {
     display: flex;
-    width: 50%;
-    margin: 5% 25% auto 25%;
-    justify-content: space-between;
+    width: 60%;
+    margin: 5% 20% auto 22%;
+    justify-content: space-around;
     .user-selected {
         display: flex;
         flex-direction: column;
         align-items: center;
         h1 {
-            margin-bottom: 25%;
             color: #ffffff;
             text-transform: uppercase;
+            margin-bottom: 25%;
         }
     }
-    .game-play-sec {
-        justify-content: space-between;
-    }
     .decision-sec {
-        margin-top: 15%;
-        display: none;
-        flex-direction: column;
+        display: flex;
         align-items: center;
+        flex-direction: column;
+        margin-top: 10%;
         h1 {
             color: #ffffff;
-            font-size: 50px;
             text-transform: uppercase;
+            margin-bottom: 20%;
         }
         .play-again-btn {
             padding: 10px 50px;
@@ -157,36 +189,21 @@ body {
             color: red;
             border-radius: 5px;
             border: none;
-            text-transform: uppercase;
-            margin-top: 5%;
+            text-transform: uppercase;           
             cursor: pointer;
         }
         .play-again-btn:hover {
             opacity: .7;
-        }
-    }
-    .decision-sec {
-        display: flex;
+        }      
     }
     .system-selected {
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
         h1 {
-            margin-bottom: 18%;
             color: #ffffff;
             text-transform: uppercase;
+            margin-bottom: 15%;
         }
-        .bg-circle {
-            padding: 30% ;
-            border-radius: 50%;
-            background-color: $header-outline;
-            position: absolute;
-            top: 35%;
-            z-index: -1;
-        }
-        
-        
     }
 }

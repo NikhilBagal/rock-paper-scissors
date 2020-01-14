@@ -1,18 +1,8 @@
-import React,{ useState,createContext } from 'react'
+import React,{ createContext } from 'react'
 
 
 export const scoreContext = createContext();
 
-/*export const Score = (props) => {
-    const [state,setState] = useState(0)
-    
-    return(
-        <scoreContext.Provider value={[state,setState]}>
-            {props.children}
-        </scoreContext.Provider>
-    )   
-}
-*/
 export class Score extends React.Component{
     constructor(){
         super()
@@ -20,9 +10,9 @@ export class Score extends React.Component{
             score:0
         }
     }
-    updateState = () => {
+    updateState = (n) => {
         this.setState({
-            score: this.state.score + 1
+            score: this.state.score + n
         })
     }
     render(){

@@ -56,6 +56,7 @@ body header .score-sec h2 {
 body .wrapper {
   overflow-x: hidden;
   height: 100vh;
+  position: relative;
 }
 
 body .wrapper .game-sec {
@@ -117,6 +118,49 @@ body .wrapper .rule-sec .rule-btn {
   cursor: pointer;
   position: absolute;
   left: 85%;
+  outline: none;
+}
+
+body .wrapper .rule-img-sec {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  border-radius: 10PX;
+  display: none;
+}
+
+body .wrapper .rule-img-sec .rule-head {
+  margin: 10% auto 10% auto;
+  font-size: 30px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .wrapper .rule-img-sec .cancel-btn {
+  background-color: transparent;
+  border: none;
+  color: #606e85;
+  font-weight: 500;
+  font-size: 30px;
+  cursor: pointer;
+  outline: none;
+}
+
+body .wrapper .rule-img-sec .cancel-btn::before {
+  content: 'X';
+}
+
+body .wrapper .rule-img-sec.active {
+  display: block;
 }
 
 .icon {
@@ -146,11 +190,10 @@ body .wrapper .rule-sec .rule-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
-  margin: 5% 25% auto 25%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 60%;
+  margin: 5% 20% auto 22%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .game-play-sec .user-selected {
@@ -167,33 +210,29 @@ body .wrapper .rule-sec .rule-btn {
 }
 
 .game-play-sec .user-selected h1 {
-  margin-bottom: 25%;
   color: #ffffff;
   text-transform: uppercase;
-}
-
-.game-play-sec .game-play-sec {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-bottom: 25%;
 }
 
 .game-play-sec .decision-sec {
-  margin-top: 15%;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: 10%;
 }
 
 .game-play-sec .decision-sec h1 {
   color: #ffffff;
-  font-size: 50px;
   text-transform: uppercase;
+  margin-bottom: 20%;
 }
 
 .game-play-sec .decision-sec .play-again-btn {
@@ -203,18 +242,11 @@ body .wrapper .rule-sec .rule-btn {
   border-radius: 5px;
   border: none;
   text-transform: uppercase;
-  margin-top: 5%;
   cursor: pointer;
 }
 
 .game-play-sec .decision-sec .play-again-btn:hover {
   opacity: .7;
-}
-
-.game-play-sec .decision-sec {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .game-play-sec .system-selected {
@@ -228,21 +260,11 @@ body .wrapper .rule-sec .rule-btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .game-play-sec .system-selected h1 {
-  margin-bottom: 18%;
   color: #ffffff;
   text-transform: uppercase;
-}
-
-.game-play-sec .system-selected .bg-circle {
-  padding: 30%;
-  border-radius: 50%;
-  background-color: #606e85;
-  position: absolute;
-  top: 35%;
-  z-index: -1;
+  margin-bottom: 15%;
 }
 /*# sourceMappingURL=style.css.map */

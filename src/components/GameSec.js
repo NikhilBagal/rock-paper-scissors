@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom'
 
 
 function GameSec(props){
+    function handler(){
+        var imgSelector = document.querySelector('.rule-img-sec')
+        imgSelector.classList.add('active')
+    }
+    function clickHandler(){
+        var imgSelector = document.querySelector('.rule-img-sec')
+        imgSelector.classList.remove('active')
+    }
     return(
         <div className="wrapper">
             <div className="game-sec">
@@ -26,11 +34,19 @@ function GameSec(props){
                     
                 </div>
             </div>
-            <div className="rule-sec">
-                <button className="rule-btn">
+            <div className="rule-sec"> 
+                <button className="rule-btn" onClick={handler}>
                     Rules
                 </button>
             </div>
+            <div className='rule-img-sec'>
+                <h3 className="rule-head">Rules
+                    <button className="cancel-btn" onClick={clickHandler}></button>
+                </h3>
+                <img src={require('../images/image-rules.svg')} alt="" className="rule-img" />
+                
+            </div>
+            
         </div>
         
     )

@@ -1,7 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function GameResult(props){
-    console.log(props.userSelected,props.imgSrc)
     return(
         <div className="game-play-sec ">
             <div className="user-selected">
@@ -10,10 +10,11 @@ function GameResult(props){
             </div>
             <div className="decision-sec ">
                 <h1>{props.isWon}</h1>
-                
-                <button className="play-again-btn">
-                    Play again
-                </button>
+                <Link to="/" >
+                    <button className="play-again-btn">
+                        Play again
+                    </button>
+                </Link>               
             </div>
             <div className="system-selected">
                 <h1>The House Picked</h1>
