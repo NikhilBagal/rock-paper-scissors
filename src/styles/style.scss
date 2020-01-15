@@ -233,7 +233,6 @@ body {
                 }
                 .img-sec {
                     .icon {
-                   //     padding: 2%  ;
                         padding: 20px 25px;
                     }
                     .paper {
@@ -318,6 +317,130 @@ body {
         .system-selected {
             h1 {
                 font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    body {
+        header {
+            width: 80%;
+            margin: 10% 10% auto 6%;
+            padding: 10px;
+            .text-sec {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                img {
+                    max-width: 60%;
+                }
+            }
+            .score-sec {
+                padding: 5px 20px;
+                p {
+                    font-size: 15px;
+                }
+                h2 {
+                    font-size: 4vh;
+                }
+            }
+        }
+        .wrapper {
+            .game-sec {
+                margin-top: 20%;
+                left: 45%;
+                #bg-img {
+                    max-width: 40%;
+                }
+                .img-sec {
+                    .icon {
+                        padding: 20px 15px;
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            max-width: 70%;
+                        }
+                    }
+                    .paper {
+                        left: -10%;
+                        border: 10px solid $paper-gradient;
+                    }
+                    .scissors {
+                        left: 25%;
+                        border: 10px solid $scissors-gradient;
+                    }
+                    .rock {
+                        left: 8%;
+                        border: 10px solid $rock-gradient;
+                    }
+                }
+            }
+            .rule-img-sec {
+                top:0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                padding: auto auto auto auto;
+                margin-left: 20%;
+                .rule-head {
+                    font-size: 20px;
+                    justify-content: space-between;
+                    width: 70%;
+                    margin: 10% 10%;
+                    font-weight: bolder;
+                }
+                .cancel-btn {
+                    font-size: 20px;
+                    font-weight: 900;
+                }
+                .rule-img {
+                    max-width: 70%;
+                    margin-left: 10%;
+                }
+            }
+            .rule-sec {
+                top: 15%;
+                .rule-btn {
+                    top: 10%;
+                    left: 35%;
+                }
+            }
+        }
+    }
+    .icon {
+        max-width: 60%;
+        padding: 20px 15px;
+    }
+    .icon-paper {
+        border: 10px solid $paper-gradient;
+    }
+    .icon-scissors {
+        border: 10px solid $scissors-gradient;
+    }
+    .icon-rock {
+        border: 10px solid $rock-gradient;
+    }
+    .game-play-sec {
+        width: 80%;
+        margin: 15% 10% auto 12%;
+        .user-selected {
+            h1 {
+                font-size: 15px;
+                margin-bottom: 80%;
+            }
+        }
+        .decision-sec {
+            margin-top: 80%;
+            .play-again-btn {
+                padding: 10px 0px;
+                width: 50vw;
+            }    
+        }
+        .system-selected {
+            h1 {
+                font-size: 15px;
+                margin-bottom: 30%;
             }
         }
     }
