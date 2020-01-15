@@ -267,4 +267,97 @@ body .wrapper .rule-img-sec.active {
   text-transform: uppercase;
   margin-bottom: 15%;
 }
+
+@media only screen and (max-width: 1100px) {
+  body header {
+    width: 70%;
+    margin: 2% 15% auto 15%;
+    padding: 10px;
+  }
+  body header .score-sec {
+    padding: 5px 30px;
+  }
+  body header .score-sec p {
+    font-size: 20px;
+  }
+  body header .score-sec h2 {
+    font-size: 5vh;
+  }
+  body .wrapper .game-sec {
+    margin-top: 12%;
+    left: 50%;
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  body .wrapper .game-sec #bg-img {
+    max-width: 40%;
+  }
+  body .wrapper .game-sec .img-sec .icon {
+    padding: 20px 25px;
+  }
+  body .wrapper .game-sec .img-sec .paper {
+    left: -5%;
+  }
+  body .wrapper .game-sec .img-sec .scissors {
+    left: 20%;
+  }
+  body .wrapper .game-sec .img-sec .rock {
+    left: 8%;
+  }
+  body .wrapper .rule-img-sec {
+    -webkit-transform: translate(-10%);
+            transform: translate(-10%);
+  }
+  .game-play-sec {
+    width: 80%;
+    margin: 10% 10% auto 12%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .game-play-sec .user-selected h1 {
+    margin-bottom: 15%;
+  }
+  .game-play-sec .decision-sec h1 {
+    margin-bottom: 10%;
+  }
+  .game-play-sec .decision-sec .play-again-btn {
+    padding: 10px 40px;
+  }
+  .game-play-sec .system-selected h1 {
+    margin-bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body .wrapper .game-sec {
+    -webkit-transform: translateX(-15%);
+            transform: translateX(-15%);
+  }
+  body .wrapper .game-sec .img-sec .scissors {
+    left: 25%;
+  }
+  body .wrapper .game-sec .img-sec .rock {
+    left: 10%;
+  }
+  body .wrapper .rule-img-sec {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  body .wrapper .rule-sec .rule-btn {
+    left: 80%;
+  }
+  .game-play-sec .user-selected h1 {
+    font-size: 20px;
+  }
+  .game-play-sec .decision-sec h1 {
+    font-size: 25px;
+  }
+  .game-play-sec .decision-sec .play-again-btn {
+    padding: 10px 30px;
+  }
+  .game-play-sec .system-selected h1 {
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

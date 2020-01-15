@@ -57,7 +57,6 @@ body {
                 max-width: 100%;
             }
             .img-sec {
-
                 .icon {
                     background-color: #ffffff;
                //     padding: 2%  ;
@@ -204,6 +203,122 @@ body {
             color: #ffffff;
             text-transform: uppercase;
             margin-bottom: 15%;
+        }
+    }
+}
+
+@media only screen and (max-width:1100px){
+    body {
+        header {
+            width: 70%;
+            margin: 2% 15% auto 15%;
+            padding: 10px;
+            .score-sec {
+                padding: 5px 30px;
+                p {
+                    font-size: 20px;
+                }
+                h2 {
+                    font-size: 5vh;
+                }
+            }
+        }
+        .wrapper {
+            .game-sec {
+                margin-top: 12%;
+                left: 50%;
+                transform: translateX(-10%);
+                #bg-img {
+                    max-width: 40%;
+                }
+                .img-sec {
+                    .icon {
+                   //     padding: 2%  ;
+                        padding: 20px 25px;
+                    }
+                    .paper {
+                        left: -5%;
+                    }
+                    .scissors {
+                        left: 20%;
+                    }
+                    .rock {
+                        left: 8%;
+                    }
+                }
+            }
+            .rule-img-sec {
+                transform: translate(-10%);
+            }
+        }
+    }
+    .game-play-sec {
+        width: 80%;
+        margin: 10% 10% auto 12%;
+        justify-content: space-between;
+        .user-selected {
+            h1 {
+                margin-bottom: 15%;
+            }
+        }
+        .decision-sec {
+            h1 {
+                margin-bottom: 10%;
+            }
+            .play-again-btn {
+                padding: 10px 40px;
+            }    
+        }
+        .system-selected {
+            h1 {
+                margin-bottom: 10%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:900px){
+    body {
+        .wrapper {
+            .game-sec {
+                transform: translateX(-15%);
+                .img-sec {
+                    .scissors {
+                        left: 25%;
+                    }
+                    .rock {
+                        left: 10%;
+                    }
+                }
+            }
+            .rule-img-sec {
+                transform: translateX(-20%);
+            }
+            .rule-sec {
+                .rule-btn {
+                    left: 80%;
+                }
+            }
+        }
+    }
+    .game-play-sec {
+        .user-selected {
+            h1 {
+                font-size: 20px;
+            }
+        }
+        .decision-sec {
+            h1 {
+                font-size: 25px;
+            }
+            .play-again-btn {
+                padding: 10px 30px;
+            }
+        }
+        .system-selected {
+            h1 {
+                font-size: 20px;
+            }
         }
     }
 }
