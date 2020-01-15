@@ -10,7 +10,7 @@ function GameResult(props){
             </div>
             <div className="decision-sec ">
                 <h1>{props.isWon}</h1>
-                <Link to="/" >
+                <Link to="/home" >
                     <button className="play-again-btn">
                         Play again
                     </button>
