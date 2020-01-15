@@ -8,11 +8,11 @@ import { Score } from './ScoreContext'
 function Body() {    
         return (
             <Score>
-                <Router>
+                <Router basename="/">
                     <div className="container">
                         <ScoreSec />
                         <Switch>
-                            <Route path='/home' exact render={(props) => <GameSec {...props} />}/>
+                            <Route path='/' exact render={(props) => <GameSec {...props} />}/>
                             <Route path="/gameplay/:id"  render={(props) => <GamePlay {...props} />} /> 
                         </Switch>
                     
