@@ -12,7 +12,7 @@ function Body() {
                     <div className="container">
                         <ScoreSec />
                         <Switch>
-                            <Route path='/' exact render={(props) => <GameSec {...props} />}/>
+                            <Route path='/home' exact render={(props) => <GameSec {...props} />}/>
                             <Route path="/gameplay/:id"  render={(props) => <GamePlay {...props} />} /> 
                         </Switch>
                     
