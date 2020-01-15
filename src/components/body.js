@@ -2,13 +2,13 @@ import React from 'react'
 import ScoreSec from './ScoreSec'
 import GameSec from './GameSec'
 import GamePlay from './GamePlay'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, HashRouter} from 'react-router-dom';
 import { Score } from './ScoreContext'
 
 function Body() {    
         return (
             <Score>
-                <Router basename="/">
+                <HashRouter basename="/">
                     <div className="container">
                         <ScoreSec />
                         <Switch>
@@ -17,7 +17,7 @@ function Body() {
                         </Switch>
                     
                     </div>
-                </Router>
+                </HashRouter>
             </Score>
             
             
