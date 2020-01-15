@@ -8,7 +8,7 @@ import { Score } from './ScoreContext'
 function Body() {    
         return (
             <Score>
-                <HashRouter basename="/">
+                <Router basename="/rock-paper-scissors">
                     <div className="container">
                         <ScoreSec />
                         <Switch>
@@ -17,7 +17,7 @@ function Body() {
                         </Switch>
                     
                     </div>
-                </HashRouter>
+                </Router>
             </Score>
             
             
